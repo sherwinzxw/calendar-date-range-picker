@@ -39,8 +39,10 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+<img src='[https://github.com/sherwinzxw/nmvm/blob/master/NMVM%20dashboard_UnitProfile.PNG](https://github-production-user-asset-6210df.s3.amazonaws.com/12377619/264319189-f014c5a4-0687-4d09-b29c-45292db95f3c.png)' style="border:1px solid #333;" /></kbd>
 
-      ![image](https://github.com/sherwinzxw/calendar-date-range-picker/assets/12377619/f014c5a4-0687-4d09-b29c-45292db95f3c)
+
+      
 <!--
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
