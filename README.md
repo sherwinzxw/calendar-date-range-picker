@@ -4,10 +4,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">NSW e.Regulation CCE Single View REST APIs</h3>
+  <h3 align="center">Calendar Date Range Picker</h3>
 
   <p align="center">
-    The Single View REST API enables you to interact with the Single View data repository governed by the NSW e.Regulation CCE programmatically. Use this API to build apps, script interactions with Single View, or develop any other type of integration. This page documents the REST resources available in project, including the HTTP response codes and example requests and responses.
+   A custom Date Range Picker empowered with a responsive calendar UI. 
     <br />
     <a href="https://github.com/NSWDAC/CCE-Qlik-Mashup"><strong>Explore the docs »</strong></a>
     <br />
