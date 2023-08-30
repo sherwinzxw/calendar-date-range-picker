@@ -1,5 +1,4 @@
 <a name="readme-top"></a>
-[![Contributors][contributors-shield]][contributors-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -75,7 +74,7 @@ To setup the project for the first time, please follow below steps:
 
 1. Clone the repo
    ```sh
-   git clone https://git.i.onegov.nsw.gov.au/cce-data/api-poc.git
+   git clone https://github.com/sherwinzxw/calendar-date-range-picker
    ```
 2. Install NPM packages
    ```sh
@@ -115,9 +114,6 @@ This is the list of resources resources that we found helpful and would like to 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/DACNSW/CCE-Qlik-Mashup?style=flat-square
-[contributors-url]: https://git.i.onegov.nsw.gov.au/cce-data/api-poc/-/graphs/master?ref_type=heads
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [nsw-design-system]: https://img.shields.io/badge/CSS-NSW%20Design%20System-blue
