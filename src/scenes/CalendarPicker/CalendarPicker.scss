@@ -1,0 +1,60 @@
+.nsw-custom-calendarpicker__calendar {
+  display: none;
+  border: 1px solid #002664;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+
+  .nsw-custom-calendarpicker__day-duration-select-control-group {
+    .day-duration-select-button-group {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 128px;
+      justify-content: flex-start;
+      align-content: start;
+      border-right: 1px solid #e2e8f0;
+
+      button {
+        background-color: transparent;
+        border: none;
+        margin: 1rem 0 0 0;
+        text-align: left;
+      }
+      button:hover {
+        color: rgba(20, 108, 253, 1);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .nsw-custom-calendarpicker__calendar-calendarpicker-control-group {
+    .nsw-custom-calendarpicker__calendar-group {
+      display: flex;
+      margin-bottom: 1rem;
+      .nsw-custom-calendar {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    .nsw-custom-calendarpicker__action-panel {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        min-width: unset;
+        width: 90px !important;
+        height: 48px;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+
+.nsw-custom-calendarpicker__calendar.active{
+    display: flex;
+    position:absolute;
+    z-index: 100;
+    background:#fff;
+}

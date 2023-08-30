@@ -1,0 +1,42 @@
+.nsw-custom-dropdown {
+  .nsw-custom-dropdown__label {
+    margin-right: 0.25rem;
+    padding:0px 4px;
+    border-bottom:2px solid transparent;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .nsw-custom-dropdown__label.active {
+    border-bottom:2px solid #2d3748;
+    transition-duration: 0.3s;
+  }
+  .nsw-custom-dropdown__label:hover {
+    border-bottom:2px solid #2d3748;
+    transition-duration: 0.3s;
+  }
+  .nsw-custom-dropdown__options {
+    position: absolute;
+    max-height: 500px;
+    overflow: auto;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 50;
+
+    span{        
+    padding: 4px 12px 4px 4px;
+    border-bottom: 1px solid #efefef;
+    }
+    span:hover {
+      background: #edf2f7;
+    }
+  }
+
+  .nsw-custom-dropdown__options.active {
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+}

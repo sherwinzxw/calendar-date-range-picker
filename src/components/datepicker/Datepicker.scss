@@ -1,0 +1,94 @@
+.nsw-custom-datepicker {
+  .nsw-custom-datepicker__date {
+    margin-bottom: 4px;
+    display: flex;
+
+    .nsw-custom-datepicker__control-group {
+      border: 1px solid rgba(76, 79, 85, 1);
+      width: fit-content;
+      min-width: 350px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+
+      .nsw-custom-datepicker__input {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+
+        &.disabled {
+          &:hover {
+            cursor: no-drop;
+          }
+        }
+
+        input::-webkit-calendar-picker-indicator {
+          display: none;
+        }
+
+        input[type="date"]::-webkit-input-placeholder {
+          visibility: hidden !important;
+        }
+
+        input {
+          text-align: center;
+          background: #fff;
+          border: none;
+          max-width: 6rem;
+          max-height: 24px;
+          padding: 4px;
+          &.disabled {
+            background-color: #f2f2f2;
+
+            &:hover {
+              background-color: #f2f2f2;
+              cursor: no-drop;
+            }
+          }
+        }
+
+        input:hover {
+          background: #efefef;
+        }
+      }
+
+      .nsw-custom-datepicker__calendar-callback {
+        .nsw-custom-datepicker__calendar-callback-button {
+          min-width: unset;
+          float: right;
+          width: 48px;
+          height: 48px;
+          padding: 0;
+          border-radius: 0px;
+        }
+      }
+    }
+
+    .nsw-custom-datepicker__clear {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+
+      button {
+        border: 0;
+        height: fit-content;
+        text-decoration: underline;
+        background-color: transparent;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #002664;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(0, 133, 179, 0.2);
+        }
+      }
+    }
+  }
+}
+
+.nsw-custom-datepicker *:not(.material-icons) {
+  font-size: 14px !important;
+}

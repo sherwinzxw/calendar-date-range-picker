@@ -1,0 +1,202 @@
+.nsw-custom-calendar {
+  width: 300px;
+  position: relative;
+  padding: 20px;
+
+  .nsw-custom-calender__title {
+    margin: 0 0 1rem 0;
+    font-size: 14px;
+    font-weight: 700;
+    .nsw-custom-calender__title_selected_date {
+      font-weight: 400;
+      text-decoration: underline;
+      margin-left: 0.5rem;
+      font-style: italic;
+    }
+  }
+
+  .nsw-custom-calender__body {
+    .nsw-custom-calendar__filter-panel {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .nsw-custom-calendar__filter-year-month {
+        display: flex;
+        vertical-align: top;
+        select {
+          border: none;
+        }
+      }
+      .nsw-custom-calendar__filter-prev-next {
+        display: flex;
+        vertical-align: top;
+
+        .nsw-custom-calendar__nav {
+          transition-duration: 0.3s;
+        }
+        .nsw-custom-calendar__nav:hover {
+          cursor: pointer;
+          transition-duration: 0.3s;
+          background: #edf2f7;
+          border-radius: 9999px;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+
+    .nsw-custom-calendar__head {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+      grid-gap: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      .nsw-custom-calendar__weekday-name {
+        display: flex;
+        color: #718096;
+        height: 25px;
+        width: 25px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+      }
+      .nsw-custom-calendar__weekday-name:hover {
+        cursor: default;
+      }
+    }
+
+    .nsw-custom-calendar__body {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+      grid-gap: 10px;
+      box-sizing: border-box;
+      .nsw-custom-calendar__day {
+        display: flex;
+        color: #2d3748;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        transition-duration: 0.3s;
+      }
+
+      .nsw-custom-calendar__day.selected {
+        background: #2d3748 !important;
+        color: #fff !important;
+        border-radius: 9999px;
+      }
+
+      .nsw-custom-calendar__day.today {
+        color: #2d3748;
+        background: #008a071e;
+        border-radius: 9999px;
+      }
+
+      .nsw-custom-calendar__day.past {
+        color: #2d3748;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 50%;
+      }
+
+      .nsw-custom-calendar__day.past.selected {
+        color: #fff;
+        opacity: 100%;
+      }
+
+      .nsw-custom-calendar__day.covered {
+        color: #2d3748;
+        background-color: #edf2f7;
+        position: relative;
+      }
+
+      .nsw-custom-calendar__day.covered:not(.selected):before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        right: 12px;
+        background-color: #edf2f7;
+        z-index: -1;
+      }
+
+      .nsw-custom-calendar__day.covered:not(.selected):after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        left: 12px;
+        background-color: #edf2f7;
+        z-index: -1;
+      }
+
+      .nsw-custom-calendar__day.covered.selected.from:after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        left: 12px;
+        background-color: #edf2f7;
+        z-index: -1;
+      }
+
+      .nsw-custom-calendar__day.selected.from.to:after,
+      .nsw-custom-calendar__day.selected.from.to::before{
+        display: none !important;
+      }
+
+      .nsw-custom-calendar__day.covered.selected.to:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        right: 12px;
+        background-color: #edf2f7;
+        z-index: -1;
+      }
+
+      .nsw-custom-calendar__day:hover:not(.disabled) {
+        cursor: pointer;
+      }
+
+      .nsw-custom-calendar__day:hover:not(.selected, .disabled) {
+        color: #2d3748;
+        background: #edf2f7;
+        border-radius: 9999px;
+        transition-duration: 0.3s;
+      }
+
+      .nsw-custom-calendar__day.disabled,
+      .nsw-custom-calendar__day.disabled:hover,
+      .nsw-custom-calendar__day:disabled,
+      .nsw-custom-calendar__day:disabled:hover  {
+        cursor: no-drop !important;
+        background: none !important;
+      }
+    }
+  }
+}
+
+.nsw-custom-calendar.disabled {
+  .nsw-custom-calendar__overlay {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #f2f2f2;
+    height: calc(100% - 10px);
+    width: calc(100%);
+    opacity: 0.5;
+    z-index: 50;
+    border-radius: 8px;
+    cursor: no-drop;
+  }
+}
+.nsw-custom-calendar * {
+  font-size: 14px;
+}

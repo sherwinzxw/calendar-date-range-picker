@@ -1,0 +1,40 @@
+[
+  {
+    "age": 29,
+    "homeTown": "Metro City",
+    "name": "Molecule Man",
+    "powers": [
+      { "damage": 4, "name": "Radiation resistance" },
+      { "damage": 6, "name": "Turning tiny" },
+      { "damage": 10, "name": "Radiation blast" }
+    ],
+    "secretIdentity": "Dan Jukes",
+    "thumbnail": "https://www.nsw.gov.au/sites/default/files/styles/card_l3_x1/public/2023-08/matildas-team-3x2.jpg?h=34bbd072&itok=XfW5hD5_"
+  },
+  {
+    "age": 39,
+    "homeTown": "Metro City",
+    "name": "Madame Uppercut",
+    "powers": [
+      { "damage": 4, "name": "Million tonne punch" },
+      { "damage": 6, "name": "Damage resistance" },
+      { "damage": 10, "name": "Superhuman reflexes" }
+    ],
+    "secretIdentity": "Jane Wilson",
+    "thumbnail": "https://www.nsw.gov.au/sites/default/files/styles/card_l3_x1/public/2023-07/CoL%20-%20Tools%20-%20Banner.jpg?h=8abcec71&itok=cULRG9Bs"
+  },
+  {
+    "age": 1000000,
+    "homeTown": "Unknown",
+    "name": "Eternal Flame",
+    "powers": [
+      { "damage": null, "name": "Immortality" },
+      { "damage": 6, "name": "Heat Immunity" },
+      { "damage": 10, "name": "Inferno" },
+      { "damage": 0, "name": "Teleportation" },
+      { "damage": 0, "name": "Interdimensional travel" }
+    ],
+    "secretIdentity": "Unknown",
+    "thumbnail": "https://www.nsw.gov.au/sites/default/files/styles/card_l3_x1/public/2023-06/Rental%20engagement%20HYS%20hero%20image%20-%20b.jpg?h=8b31135d&itok=ozpjYj0o"
+  }
+]
