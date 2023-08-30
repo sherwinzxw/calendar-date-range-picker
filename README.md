@@ -10,6 +10,7 @@
     <br />
     <a href="https://github.com/NSWDAC/CCE-Qlik-Mashup"><strong>Explore the docs »</strong></a>
     <br />
+
   </p>
 </div>
 
@@ -40,9 +41,8 @@
 ## About The Project
 
 <!--
-![Product Home Page Screen Shot][product-home-screenshot]
 
-![Product NHPPD Calculator Page Screen Shot][product-nhppd-screenshot] -->
+      ![image](https://github.com/sherwinzxw/calendar-date-range-picker/assets/12377619/f014c5a4-0687-4d09-b29c-45292db95f3c)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
